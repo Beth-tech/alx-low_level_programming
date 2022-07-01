@@ -3,29 +3,26 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main -> Entry point
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 int n;
+int a;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-printf("last digit of %d is ", n);
-if (n > 5)
+a = n % 10;
+if (a > 5)
 {
-printf("greater than 5");
-}
-else if (n == 0)
+printf("Last digit of %d is %d and is greater than 5\n", n, a);
+} else if (a == 0)
 {
-printf("0");
-}
-else
-(n < 6 && n != n)
+printf("Last digit of %d is %d and is 0\n", n, a);
+} else
 {
-printf("less than 6 not 0");
-}
-printf("\n");
-
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
+{
 return (0);
 }
