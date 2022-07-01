@@ -6,13 +6,11 @@
  */
 int main(void)
 {
-char letters[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', '
-l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-int i;
-for (i = 0; i < 26; i++)
+int ch;
+for (ch = 97; ch <= 122; ch++)
 {
-putchar(letters[i]);
+putchar(ch);
 }
-putchar('\n');
+putchar(10);
 return (0);
 }
