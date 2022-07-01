@@ -6,11 +6,13 @@
  */
 int main(void)
 {
-int ch;
-for ch = 97; ch <= 122; ch++)
+char letters[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', '
+l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+int i;
+for (i = 0; i < 26; i++)
 {
-putchar(ch);
+putchar(letters[i]);
 }
-putchar(10); /*this is an ascii code for new line*/
+putchar('\n');
 return (0);
 }
