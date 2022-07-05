@@ -14,7 +14,7 @@ for (i = 1; i <= 50; ++i)
 {
 if (j != 20365011074)
 {
-printt("%ld, ", j);
+printf("%ld, ", j);
 }
 else
 {
