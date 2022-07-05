@@ -2,9 +2,9 @@
 
 /**
  * add -> adds two number
- * @x: param1
- * @y: param2
- * Return: x + y
+ * @x: int
+ * @y: int
+ * Return: Add
  */
 int add(int x, int y)
 {
