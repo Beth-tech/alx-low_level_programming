@@ -12,7 +12,7 @@ int main(void)
 	int i;
 	int n = 0;
 
-	srand(time(o));
+	srand(time(0));
 
 	for (i = 0; n <= 2772 - 125; i++)
 	{
