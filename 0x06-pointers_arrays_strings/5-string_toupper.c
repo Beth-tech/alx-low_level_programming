@@ -5,15 +5,15 @@
  * @x: string param
  * Return: string
  */
-char *string_toupper(char *x);
+char *string_toupper(char *a)
 {
-	int i = 0;
+	int j;
 
-	while (x[i])
+	for (j = 0; a[j] != '\0'; j++)
 	{
-		if (x[i] >= 97 && x[i] <= 122)
-			x[i] = x[i] - 32;
-		i++;
+		if (a[j] >= 'a' && a[j] <= 'z')
+			a[j] = a[j] - 32;
 	}
-	return (x);
+
+	return (a);
 }
