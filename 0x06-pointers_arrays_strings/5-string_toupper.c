@@ -2,7 +2,7 @@
 
 /**
  * string_toupper -> converting any string to upper case
- * @x: string param
+ * @a: string param
  * Return: string
  */
 char *string_toupper(char *a)
