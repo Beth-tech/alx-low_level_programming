@@ -20,9 +20,9 @@ void print_buffer(char *b, int size)
 			if (j < (size - 1))
 				printf("%02x%02x ", b[j], b[j + 1]);
 			else if (j < size)
-				printf("%02x  ", b[j]);
+				printf("%02x   ", b[j]);
 			else
-				printf("  ");
+				printf("   ");
 		}
 		for (k = a; k < a + 10; k++)
 		{
