@@ -22,7 +22,7 @@ void print_buffer(char *b, int size)
 			else if (j < size)
 				printf("%02x   ", b[j]);
 			else
-				printf("   ");
+				printf("     ");
 		}
 		for (k = a; k < a + 10; k++)
 		{
