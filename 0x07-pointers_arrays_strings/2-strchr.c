@@ -4,22 +4,26 @@
  * _strchr -> string character
  *  @s: string given
  *  @c: another char
- *  Return: a string
+ *  Return: pointer s
  */
 char *_strchr(char *s, char c)
 {
-	int a;
+	unsigned int i;
+	char *p;
 
-	while (1)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		a = *s++;
-		if (a == c)
+		if (s[i] == c)
 		{
-			return (s - 1);
-		}
-		if (a == 0)
-		{
-			return (NULL);
+			p = &s[i];
+			return (p);
+
 		}
 	}
+	if (c == '\0')
+	{
+		p = &s[i];
+		return (p);
+	}
+	return ('\0');
 }
