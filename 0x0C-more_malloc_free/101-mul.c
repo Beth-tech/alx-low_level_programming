@@ -65,6 +65,7 @@ char *iterate_zeroes(char *str)
 
 	return (str);
 }
+
 /**
  * get_digit - Converts a digit character to a corresponding int.
  * @c: The character to be converted.
@@ -206,6 +207,7 @@ int main(int argc, char *argv[])
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
 		printf("0\n");
+		return (0);
 	}
 
 	size = find_len(argv[1]) + find_len(argv[2]);
