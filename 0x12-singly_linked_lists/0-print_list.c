@@ -6,13 +6,13 @@
  *
  * Return: number of nodes
  */
+
 size_t print_list(const list_t *h)
 {
 unsigned int count = 0;
 const list_t *tmp;
 
 tmp = h;
-
 
 while (tmp != NULL)
 {
